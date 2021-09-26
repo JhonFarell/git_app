@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="big_bold_text">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/iron_grey</item>
+    </style>
+
+    <style name="small_bold_text">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/iron_grey</item>
+    </style>
+
+    <style name="default_EditText_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/default_EditText_height</item>
+        <item name="android:layout_margin">@dimen/default_margin</item>
+        <item name="android:textColorHint">@color/iron_grey</item>
+    </style>
+
+    <style name="big_bold_silver_text">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/silver</item>
+    </style>
+</resources>

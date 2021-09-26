@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".main.Main_Fragment"
+    android:background="@color/mint">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintBottom_toTopOf="@id/pageNumber"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:layout_editor_absoluteX="27dp"
+        tools:listitem="@layout/rv_fragment" />
+
+    <TextView
+        android:id="@+id/pageNumber"
+        android:gravity="center"
+        tools:text = "page"
+        android:text="1"
+        android:textColor="@color/silver"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/default_button_height"
+        android:layout_marginEnd="@dimen/default_button_height"
+        android:layout_marginStart="@dimen/default_button_height"
+        style="@style/big_bold_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@color/iron_grey"
+        />
+
+   <TextView
+       android:id="@+id/prevPage"
+       android:text="@string/backward"
+       android:gravity="center"
+       android:clickable="true"
+       android:focusable="true"
+       android:background="@drawable/button_shape"
+       android:layout_width="@dimen/default_button_height"
+       android:layout_height="@dimen/default_button_height"
+       app:layout_constraintEnd_toStartOf="@id/pageNumber"
+       app:layout_constraintTop_toTopOf="@id/pageNumber"
+       style="@style/big_bold_silver_text"
+       />
+
+    <TextView
+        android:id="@+id/nextPage"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:layout_width="@dimen/default_button_height"
+        android:layout_height="@dimen/default_button_height"
+        app:layout_constraintStart_toEndOf="@id/pageNumber"
+        app:layout_constraintTop_toTopOf="@id/pageNumber"
+        app:layout_constraintBottom_toBottomOf="@id/pageNumber"
+        android:text="@string/forward"
+        android:background="@drawable/button_shape"
+        style="@style/big_bold_silver_text"
+        />
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/src_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_margin="@dimen/button_margin"
+        android:src="@drawable/ic_search"
+        app:tint="@color/silver"
+        android:backgroundTint="@color/iron_grey"
+        app:layout_constraintBottom_toTopOf="@id/pageNumber"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

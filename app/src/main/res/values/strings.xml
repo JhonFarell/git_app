@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">github_search_app</string>
+    <string name="Repository_name">Rep:</string>
+    <string name="owner">Owner:</string>
+    <string name="search">НАЙТИ</string>
+    <string name="search_public_sign">Искать в публичных репозиториях</string>
+    <string name="back_button">НАЗАД</string>
+    <string name="or_sign">И/ИЛИ</string>
+    <string name="forward"><![CDATA[->]]></string>
+    <string name="backward"><![CDATA[<-]]></string>
+</resources>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="16dp"
+    android:background="@drawable/round_shape_colored"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/Image_v"
+        android:layout_width="@dimen/defaultPicSize"
+        android:layout_height="@dimen/defaultPicSize"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_margin="@dimen/default_margin"
+        />
+
+    <TextView
+        android:id="@+id/Repo_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/Repository_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/Repository_name"
+        tools:text="Repo_name"
+        android:layout_margin="@dimen/default_margin"
+        style="@style/big_bold_text" />
+
+    <TextView
+        android:id="@+id/Repository_name"
+        android:text="@string/Repository_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/Image_v"
+        app:layout_constraintEnd_toStartOf="@id/Repo_name"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/big_bold_text"
+        />
+
+    <TextView
+        android:id="@+id/Owner_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/Owner"
+        app:layout_constraintStart_toEndOf="@id/Owner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/Owner"
+        android:layout_margin="@dimen/default_margin"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        tools:text="Owner"
+        style="@style/small_bold_text"/>
+
+    <TextView
+        android:id="@+id/Owner"
+        android:text="@string/owner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/default_margin"
+        app:layout_constraintStart_toEndOf="@id/Image_v"
+        app:layout_constraintEnd_toStartOf="@id/Owner_name"
+        app:layout_constraintTop_toBottomOf="@id/Repository_name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        style="@style/small_bold_text"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
